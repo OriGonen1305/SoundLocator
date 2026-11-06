@@ -1,0 +1,9 @@
+{
+  "room_m": [6.0, 5.0],
+  "microphones": [
+    {"channel": 0, "position_m": [0.5, 2.5]},
+    {"channel": 1, "position_m": [2.0, 2.5]},
+    {"channel": 2, "position_m": [4.0, 2.5]},
+    {"channel": 3, "position_m": [5.5, 2.5]}
+  ]
+}

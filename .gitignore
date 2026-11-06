@@ -1,0 +1,10 @@
+.venv/
+.cache/
+.verification/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.DS_Store
+scratch/

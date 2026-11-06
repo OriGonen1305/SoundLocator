@@ -1,0 +1,94 @@
+{
+  "commands": [
+    {
+      "command": "python3 -m venv .venv",
+      "exit_code": 0,
+      "elapsed_seconds": 1.839
+    },
+    {
+      "command": ".venv/bin/python -m pip install -r requirements.txt",
+      "exit_code": 0,
+      "elapsed_seconds": 4.985
+    },
+    {
+      "command": "./run.sh --test",
+      "exit_code": 0,
+      "elapsed_seconds": 27.704
+    },
+    {
+      "command": "./run.sh evaluate --output scratch/evaluation.json",
+      "exit_code": 0,
+      "elapsed_seconds": 3.205
+    },
+    {
+      "command": "./run.sh benchmark --output scratch/runtime.json",
+      "exit_code": 0,
+      "elapsed_seconds": 0.528
+    },
+    {
+      "command": "./run.sh demo --snapshot scratch/demo.png",
+      "exit_code": 0,
+      "elapsed_seconds": 1.26
+    },
+    {
+      "command": "./run.sh simulate --source 2 1.5 --seed 7 --output scratch/simulated.wav",
+      "exit_code": 0,
+      "elapsed_seconds": 0.101
+    },
+    {
+      "command": "./run.sh locate scratch/simulated.wav --geometry examples/array.json",
+      "exit_code": 0,
+      "elapsed_seconds": 0.107
+    },
+    {
+      "command": "./run.sh demo --wav scratch/simulated.wav --geometry examples/array.json --snapshot scratch/imported.png",
+      "exit_code": 0,
+      "elapsed_seconds": 1.029
+    }
+  ],
+  "accuracy_replay": "All 480 trial rows and summary values match exactly",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "project_version": "0.1.0"
+  },
+  "source_sha256": "7a719923afd269d5c62f2c1659e022226310f84f3423d90cb89bdb4f01c462ea",
+  "baseline_source_sha256": "9f0a34f7af0e2cc28172cb494804473e06deecc2ead69c459a89b37adb753aaf",
+  "test_count": 27,
+  "native_ui": "See docs/verification.md for separately observed desktop checks",
+  "hardware_recordings_tested": false,
+  "files_sha256": {
+    ".gitignore": "564120a15f1cdd2a66504dc017e32fad315a307dbb56fb9bf453cf44e45f6e96",
+    "README.md": "634a266074e77d702f34287162264d55146ca319adb3cafc2d6452949fcea467",
+    "docs/demo.png": "1c0cac9a118ea9dd826f7bbb2eb26145e5948dfa4c452eab473dda6a0b9cadb7",
+    "docs/method.md": "28fdd8dc33169bf636303929c3851c4c5ae5b28e2ea3544b9236c85f769da246",
+    "docs/protocol.md": "b804d7bfc4eb20f4fda40560fb3ec1214be9e35bda38b1e50a10e4817de9f695",
+    "docs/results.md": "81990afd8b91aafe0740dd833e96aa234bd63ae6d8bf07d8c6c3e7e227225087",
+    "docs/verification.md": "d4e268fa39c70df1e5bd6f47ef5659156ef4258d590b6887f5aafe298dc6cc8f",
+    "examples/array.json": "638eac260fb69bc47d078c579711666a5e3b3b592b6fd7fbe881192ebf7639bf",
+    "examples/line-array.json": "b53f65b83355bdd7b1efd0c3c9edfd9a1b5a5cc3afc82ec5d62b0fd3bc1ed299",
+    "pyproject.toml": "14fc8924bb20954daba9b462a427d1005c7d14820aa16c2da43395fdcc879948",
+    "requirements.txt": "b86fd721232627c12879b599769c242695ca74c9fc7722491cbf4d94d541a1a9",
+    "results/evaluation.json": "5376418220a15ff3108388cba02906a9606d6c127819d657a85e181225eba4e5",
+    "results/runtime.json": "4746b8479f9c9edc3d500938a8b67d9ad59cfa5c710b6210b010afa3007ffee5",
+    "run.sh": "291038bb6e64bf0eba307f775abd5e8aca956cfcdc3b37f9877bc713d99c7075",
+    "scripts/verify_clean.py": "38d6761adf1693e3aaa8e887a2eafbb37fccd99d749f50c9946384ee86a6a388",
+    "sound_locator/__init__.py": "2235e573e69792e33cebb8cae9cf3ecce911e769dde49961b068a7979a2822c5",
+    "sound_locator/__main__.py": "8e2e04f1e3695e9cc5e69b9b6e8a8ec3ba17a80d34d7fa29802146505847b360",
+    "sound_locator/audio.py": "13ff90f0d5e2fe986625893837075704b50962738f349e3fc495fd097826e811",
+    "sound_locator/delays.py": "2192aa18d3903f4be259d86c0be55a87960b93dc9e4de3433d684ca51e337680",
+    "sound_locator/demo.py": "7835a66fb0760a61231488687fdebd440bd483375528ea4b68d8a06795d2b6f9",
+    "sound_locator/estimator.py": "47d135c5f1df1350de44e878f47d538e62e3cda8311699e944a0aa5a6c4222e2",
+    "sound_locator/experiment.py": "6061ab1aae98c54af5bc38f522c065940cf2216a7dd8e82ce381d485bee09ab6",
+    "sound_locator/settings.py": "1599451f5ebe9d8794c171bf0976832dc178174d71f564f85cc9a87eba336869",
+    "sound_locator/simulator.py": "7a19b6c9c6c82fbf241b7512cf214462f93c17cb37f96ce8fb84a51f78c9fa68",
+    "sound_locator/solver.py": "68c75c59f6bf9a1f0d3fcfd66829384001eb9653b1fb9173bf4d59fd4c1591c8",
+    "tests/fixtures/final-review/SOURCE.txt": "29e669680485e53aac4061b4dd25cd93a19f8d13867fda8435e6285530f1115a",
+    "tests/fixtures/final-review/one-meter-room.json": "6c5256ba258870f9375d94fe591b7a4d2eab19a2be14cc1a36a1a7252e940be5",
+    "tests/fixtures/final-review/too-short.wav": "5148005e0890b72500710e2d2dc17feaad7a51e16dfdc71a2adbe9cd0ee10793",
+    "tests/test_io_and_demo.py": "813138773cc6b70047e1c7f976aa273f818f663a51b666acd075555b93f049d1",
+    "tests/test_math.py": "6842979e7c41c779af677a231208ba5fa56697b662884f054875d960155c13ea"
+  }
+}

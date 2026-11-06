@@ -1,0 +1,2 @@
+Unmodified cases from the user-supplied SoundLocator-final-review.zip (2026-11-06).
+The WAV is synthetic: 200 frames, four channels, 24 kHz.
